@@ -1,4 +1,4 @@
-export interface Tasks {
+export interface CollectionModel {
   category: string
   name: string
   text: string
