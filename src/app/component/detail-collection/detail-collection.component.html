@@ -1,0 +1,11 @@
+<ng-container *ngIf="!item;else elseBlock">
+  <div>Select Item</div>
+
+</ng-container>
+<ng-template #elseBlock>
+  <div>
+    <div>{{item.category}}</div>
+    <div>{{item.name}}</div>
+    <div>{{item.text}}</div>
+  </div>
+</ng-template>
