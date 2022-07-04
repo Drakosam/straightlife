@@ -1,0 +1,16 @@
+<div class="custom-list_list-body">
+  <ng-container *ngFor="let cat of itemCategory; let i= index">
+    <div>
+      <div class="custom-list-item noselect custom-list-category" (click)="onSelectCategory(cat)">
+        {{cat}}
+      </div>
+      <ng-container *ngIf="selected===cat">
+        <ng-container *ngFor="let item of collectionList; let i= index">
+          <div class="custom-list-item noselect" *ngIf="item.category===cat" (click)="onSelectItem(item)">
+            <div>{{item.name}}</div>
+          </div>
+        </ng-container>
+      </ng-container>
+    </div>
+  </ng-container>
+</div>
