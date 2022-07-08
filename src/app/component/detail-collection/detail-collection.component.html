@@ -3,9 +3,11 @@
 
 </ng-container>
 <ng-template #elseBlock>
-  <div>
-    <div>{{item.category}}</div>
-    <div>{{item.name}}</div>
-    <div>{{item.text}}</div>
+  <div class="w-100 h-100 border-box">
+    <div class="flex-box w-100 text-to-center ">
+      <div class="w-50 border-box p-5 bold-text">{{item.category}}</div>
+      <div class="w-50 border-box p-5 bold-text">{{item.name}}</div>
+    </div>
+    <div class="p-5">{{item.text}}</div>
   </div>
 </ng-template>

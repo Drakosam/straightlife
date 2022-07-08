@@ -1,14 +1,17 @@
-
-
 .task {
   &-body{
     width: 100%;
     height: 100%;
     display: flex;
+    box-sizing: border-box;
   }
   &_list-body {
     background-color: #60e579;
     width: 25%;
+    height: 100%;
+  }
+  &_detail-body{
+    width: 75%;
     height: 100%;
   }
 }
